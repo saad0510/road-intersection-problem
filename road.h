@@ -1,13 +1,3 @@
-/*
- * author:         Saad Bin Khalid
- * rollno:         20k-0161
- * section:        F
- * batch:          BSCS - sophomore
- * email:          ayyansaad46@gmail.com
- *                 k200161@nu.edu.pk
- * last-modified:  14 April 2022
- */
-
 #ifndef _ROAD_H_
 #define _ROAD_H_
 
