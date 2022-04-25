@@ -1,13 +1,3 @@
-/*
- * author:         Saad Bin Khalid
- * rollno:         20k-0161
- * section:        F
- * batch:          BSCS - sophomore
- * email:          ayyansaad46@gmail.com
- *                 k200161@nu.edu.pk
- * last-modified:  14 April 2022
- */
-
 #include "road.h"
 #include "header.h"
 #define MAX_CARS_IN_INTERSECTION (3)
@@ -45,7 +35,7 @@ void *carthread(void *arg)
         usleep(100000);
 
 front_gate: // entry point of all threads
-            // your competitor threads are X threads
+            // your competitor (opposite road) threads are X threads
 
     while (inside != proad->dir) // X is inside?
     {
@@ -61,7 +51,7 @@ front_gate: // entry point of all threads
             break;                   // break if acquired
         // your threads are waiting for their turns
         // meanwhile...
-        usleep(1000000);          // give X a chance to get in (LINE A)
+        usleep(1000000);          // give X a chance to get in
         if (inside != proad->dir) // if X gets in
             goto front_gate;      // retreat your threads
     }
@@ -88,8 +78,8 @@ int main(int argc, char const *argv[])
 
     pthread_t cars_we[cars_count];
     pthread_t cars_ns[cars_count];
-    struct road road_we; // west to east : horizontal road
-    struct road road_ns; // north to south : verical road
+    struct road road_we; 	// west to east : horizontal road
+    struct road road_ns; 	// north to south : verical road
     struct road *roads[2] = {&road_we, &road_ns};
 
     sem_init(&lock, 0, MAX_CARS_IN_INTERSECTION);
