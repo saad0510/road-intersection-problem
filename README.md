@@ -4,12 +4,6 @@ Fast Nuces selects a student to solve teen talwar traffic intersection problem.T
 
 ![intersection-image](./images/problem.jpg_large)
 
-## Authors
-
-- github : [@saad0510](https://www.github.com/saad0510)
-- email : ayyansaad46@gmail.com or k200161@nu.edu.pk
-
-
 ## Run Locally
 
 Clone the project
@@ -41,3 +35,13 @@ Start the program
 ## Screenshots
 
 ![demo_gif](./images/demo.gif)
+
+
+## Authors
+
+- github : [@saad0510](https://www.github.com/saad0510)
+- email : ayyansaad46@gmail.com or k200161@nu.edu.pk
+
+## Last updated
+
+_April, 2022
